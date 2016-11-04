@@ -4,7 +4,7 @@ COPY requirements.txt /snarkbot/
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get install -yq python3-minimal python3-pip python3-setuptools && \
+    apt-get install -yq --no-install-recommends python3-minimal python3-pip python3-setuptools && \
     pip3 install -r /snarkbot/requirements.txt --disable-pip-version-check --no-cache-dir && \
     apt-get purge -y --auto-remove python3-pip && \
     apt-get autoremove -y && \
