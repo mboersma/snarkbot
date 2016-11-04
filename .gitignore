@@ -87,3 +87,6 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# RTM Bot settings file
+rtmbot.conf
